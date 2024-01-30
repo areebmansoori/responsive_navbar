@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#logo{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 25%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(36, 27, 16);
+}
+#nav-item{
+    text-decoration: none;
+    /* gap: 30px; */
+    color: rgb(255, 255, 255);
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+}
+a:hover{
+    color: aqua;
+    transition: smooth;
+}
+#icon{
+    font-size: 40px;
+    display: none;
+}
+@media(min-width:700px) {   
+    ul{
+        display: none;
+    }
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:700px) {
+    #nav{
+        display: none;
+    }
+    #icon{
+        display: block;
+    }
+    html{
+        font-size: 50%;
+    }
+}
